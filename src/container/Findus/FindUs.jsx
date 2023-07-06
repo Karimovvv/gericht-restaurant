@@ -1,8 +1,26 @@
 import React from 'react';
+import { images, data } from '../../constants'
+import { SubHeading} from '../../components'
 
 const FindUs = () => (
-  <div>
-    FindUs
+  <div className='app__bg app__wrapper section__padding' id='contact'>
+     <div className='app__wrapper_info'>
+      <SubHeading title="Contact"/>
+      <h1 className='headtext__cormorant' style={{marginBottom:"3rem"}}>Find Us</h1>
+
+      <div className='app__wrapper-content'>
+         <p className='p__opensans'>Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</p>
+         <p className='P__cormorant' style={{margin:'2rem 0', color:'#DCCA87'}}>Opening Hours</p>
+         <p className='p__opensans'>Mon - Fri: 10:00 am - 02:00 am</p>
+         <p className='p__opensans'>Sat - Sun: 10:00 am - 03:00 am</p>
+      </div>
+      <button type='button'className='custom__button' style={{margin:'2rem'}}>Visit Us</button>
+    
+     </div>
+
+     <div className='app__wrapper_img'>
+      <img src={images.findus} alt="findus" />
+     </div>
   </div>
 );
 

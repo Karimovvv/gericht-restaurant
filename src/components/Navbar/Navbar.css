@@ -4,7 +4,6 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-black);
-
     padding: 1rem 2rem;
 }
 .app__navbar-logo{
@@ -108,5 +107,8 @@
     }
     .app__navbar-logo img{
         width: 110px;
+    }
+    .app__navbar-smallscreen_links li:hover{
+        color: var(--color-grey);
     }
 }
